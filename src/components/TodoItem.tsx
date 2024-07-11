@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 
 
-const ViewTask: React.FC<ViewTaskProps> = ({
+const TodoItem: React.FC<ViewTaskProps> = ({
   isViewModalOpen,
   handleCloseModal,
   editTask,
@@ -68,4 +68,4 @@ const CloseButton = styled.button`
     background-color: #3e8e41;
   }
 `;
-export default ViewTask;
+export default TodoItem;

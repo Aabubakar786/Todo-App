@@ -4,9 +4,9 @@ import StyledButton from '../components/StyledButton';
 import { FaCalendarPlus } from 'react-icons/fa';
 import styled from 'styled-components';
 import StyledFilterButton from '../components/Filterdropdown';
-import TodoAddTask from '../components/TodoAddTask';
+import TodoForm from '../components/TodoForm';
 import { TodoTask } from '../types/todo';
-import ViewTask from '../components/ViewTask';
+import TodoItem from '../components/TodoItem';
 import TodoList from '../components/TodoList';
 
 interface FilterOption {
@@ -99,7 +99,7 @@ const Dashboard: React.FC = () => {
             setIsViewModelOpen={setIsViewModalOpen}
           />
 
-          <TodoAddTask
+          <TodoForm
             isModalOpen={isModalOpen}
             handleOpenModal={() => setIsModalOpen(true)}
             handleCloseModal={() => {
@@ -110,7 +110,7 @@ const Dashboard: React.FC = () => {
             editTask={editTask}
           />
 
-          <ViewTask
+          <TodoItem
             isViewModalOpen={isViewModalOpen}
             handleOpenModal={() => setIsViewModalOpen(true)}
             handleCloseModal={() => {setIsViewModalOpen(false);

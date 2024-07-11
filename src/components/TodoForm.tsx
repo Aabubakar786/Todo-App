@@ -9,7 +9,7 @@ import StyledText from './StyledText';
 import styled from 'styled-components';
 
 
-const TodoAddTask: React.FC<TodoAddTaskProps> = ({
+const TodoForm: React.FC<TodoAddTaskProps> = ({
     isModalOpen,
     handleCloseModal,
     handleSubmit,
@@ -85,4 +85,4 @@ const StyledForm = styled.div`
      display: flex
    }
 `
-export default TodoAddTask;
+export default TodoForm;
